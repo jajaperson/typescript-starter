@@ -1,0 +1,27 @@
+{
+  "name": "typescript-starter",
+  "license": "MIT",
+  "author": "James Jensen <jamesarthurjensen@gmail.com>",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\" \"bin/**/*.ts\" \"bin/**/*.js\"",
+    "lint": "tslint --project .",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run build",
+    "release": "np",
+    "pretest": "npm run lint",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.13",
+    "jest": "^23.6.0",
+    "np": "*",
+    "prettier": "^1.16.0",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.2.4"
+  }
+}
