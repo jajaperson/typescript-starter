@@ -2,7 +2,14 @@
   "name": "typescript-starter",
   "license": "MIT",
   "author": "James Jensen <jamesarthurjensen@gmail.com>",
+  "files": [
+    "lib"
+  ],
   "main": "lib/main.js",
+  "typings": "lib/main.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\" \"bin/**/*.ts\" \"bin/**/*.js\"",
@@ -17,7 +24,7 @@
     "@types/jest": "^23.3.13",
     "jest": "^23.6.0",
     "np": "*",
-    "prettier": "^1.16.0",
+    "prettier": "^1.16.1",
     "ts-jest": "^23.10.5",
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.17.0",
